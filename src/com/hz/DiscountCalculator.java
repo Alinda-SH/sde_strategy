@@ -4,7 +4,7 @@ import products.Product;
 
 public class DiscountCalculator {
 
-    private Customer customer;
+    private CustomerClass customer;
 
     public void setChristmasEve(boolean christmasEve) {
         isChristmasEve = christmasEve;
@@ -12,7 +12,7 @@ public class DiscountCalculator {
 
     private boolean isChristmasEve;
 
-    public DiscountCalculator(Customer customer) {
+    public DiscountCalculator(CustomerClass customer) {
         this.customer = customer;
     }
 

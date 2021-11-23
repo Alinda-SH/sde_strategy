@@ -8,7 +8,7 @@ public class Checkout {
         this.salesAction = action;
     }
 
-    public void nextInLine(Customer customer) {
+    public void nextInLine(CustomerClass customer) {
 
         // init checkout
         DiscountCalculator discountCalculator = new DiscountCalculator(customer);

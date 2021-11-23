@@ -2,35 +2,28 @@ package com.hz;
 
 import products.Product;
 
-public class Customer {
+public interface Customer {
 
-    private CustomerType customerType;
+    CustomerType customerType = null;
+    String name = null;
+    ShoppingCart cart = null;
 
-    public String getName() {
-        return name;
-    }
+    public String getName();
+    public ShoppingCart getCart();
 
-    private String name;
-
-    public ShoppingCart getCart() {
-        return cart;
-    }
-
-    private ShoppingCart cart;
-
-    public Customer(CustomerType customerType, String name) {
-        this.customerType = customerType;
-        this.name = name;
-
-        this.cart = new ShoppingCart();
-    }
-
-    public void buys(Product product) {
-        this.cart.add(product);
-    }
-
-    public boolean isRegular() {
-
-        return this.customerType == CustomerType.Regular;
-    }
+//    public CustomerClass(CustomerType customerType, String name) {
+//        this.customerType = customerType;
+//        this.name = name;
+//
+//        this.cart = new ShoppingCart();
+//    }
+//
+//    public void buys(Product product) {
+//        this.cart.add(product);
+//    }
+//
+//    public boolean isRegular() {
+//
+//        return this.customerType == CustomerType.Regular;
+//    }
 }
